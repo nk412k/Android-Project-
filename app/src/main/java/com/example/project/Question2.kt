@@ -25,9 +25,11 @@ class Question2 : AppCompatActivity() {
         submit=findViewById<Button>(R.id.button3)
 
         hindi.setOnClickListener{
-            Toast.makeText(applicationContext,"Selected:Hindi",Toast.LENGTH_SHORT).show()
+            if(hindi.isChecked)
+                Toast.makeText(applicationContext,"Selected:Hindi",Toast.LENGTH_SHORT).show()
         }
         english.setOnClickListener{
+            if(english.isChecked)
             Toast.makeText(applicationContext,"Selected:English",Toast.LENGTH_SHORT).show()
         }
         rmale.setOnClickListener{
